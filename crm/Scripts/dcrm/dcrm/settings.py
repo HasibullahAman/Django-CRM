@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'websit',
 ]
 
 MIDDLEWARE = [
@@ -63,8 +64,12 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'crmweb',
+        'USER': 'root',
+        'PASSWORD': 'L01027046@hasibjan',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
