@@ -12,7 +12,7 @@ class Product(models.Model):
 
 
 
-class Custtomer(models.Model):
+class Customer(models.Model):
     MEMBERSHIP_BRONZE = 'B'
     MEMBERSHIP_SILVER = 'S'
     MEMBERSHIPT_GOLD = 'G'
@@ -43,3 +43,11 @@ class Order(models.Model):
     ]
     placed_at = models.DateTimeField(auto_now_add=True)
     payment_status = models.CharField(max_length=1, choices=PAYMENT_STATUS_CHOIICES, default=PAYMENT_STATUS_PENDING)
+
+
+
+class Address(models.Model):
+    street = models.CharField(max_length=255)
+    city = models.CharField(max_length=255)
+    Customer = models.OneToOneField(Customer, on_delete=models.CASCADE, primary_key=True)
+    
