@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dcef924a0dd26cbdbd9f0dec69e6e788d2fc73944deb8adeec31f576e317cba9"
+            "sha256": "df39d158ad2720327b1dc81cc0b5c525ee40358ff17959a1e74ca3c308288fe6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,19 +16,39 @@
         ]
     },
     "default": {
-        "pony": {
+        "asgiref": {
             "hashes": [
-                "sha256:5112b4cf40d3f24e93ae66dc5ab7dc6813388efa870e750928d60dc699873cf5",
-                "sha256:f7f83b2981893e49f7f18e8def52ad8fa8f8e6c5f9583b9aaed62d4d85036a0f"
+                "sha256:5f184dc43b7e763efe848065441eac62229c9f7b0475f41f80e207a114eda4ce",
+                "sha256:e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133"
             ],
-            "version": "==0.7.19"
+            "markers": "python_version >= '3.9'",
+            "version": "==3.11.1"
         },
-        "store": {
+        "django": {
             "hashes": [
-                "sha256:e101a61aaa5c8e2a9c643dd9c67ae907e94e3be7fbcf068a3a38a130f8e738b0"
+                "sha256:2e5974441491ddb34c3f13d5e7a9f97b07ba03bf70234c0a9c68b79bbb235bc3",
+                "sha256:90be765ee756af8a6cbd6693e56452404b5ad15294f4d5e40c0a55a0f4870fe1"
             ],
             "index": "pypi",
-            "version": "==2020.2.10"
+            "markers": "python_version >= '3.12'",
+            "version": "==6.0.3"
+        },
+        "django-debug-toolbar": {
+            "hashes": [
+                "sha256:a199ce3d0f884739a9096835ad417479fede05f3b3c4824bc8b354721ba8f629",
+                "sha256:f830a86fe02e17f625a22cfbed24a5bd1500762e201ec959c50efb0f9327282b"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==6.3.0"
+        },
+        "sqlparse": {
+            "hashes": [
+                "sha256:12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba",
+                "sha256:e20d4a9b0b8585fdf63b10d30066c7c94c5d7a7ec47c889a2d83a3caa93ff28e"
+            ],
+            "markers": "python_version >= '3.8'",
+            "version": "==0.5.5"
         }
     },
     "develop": {}
