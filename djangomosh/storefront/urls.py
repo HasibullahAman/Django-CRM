@@ -22,7 +22,6 @@ from .settings import DEBUG_TOOLBAR_INSTALLED
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("playground/", include("playground.urls")),
 ]
 
 if DEBUG_TOOLBAR_INSTALLED:
